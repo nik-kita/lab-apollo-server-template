@@ -1,0 +1,27 @@
+{
+  "name": "template-worker-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy src/index.ts",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest run",
+    "generate": "graphql-codegen"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231016.0",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/typescript": "^4.0.6",
+    "@graphql-codegen/typescript-resolvers": "^4.0.6",
+    "typescript": "^5.0.4",
+    "vitest": "^3.0.0",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@apollo/datasource-rest": "^6.2.2",
+    "@apollo/server": "^4.10.2",
+    "@as-integrations/cloudflare-workers": "^1.0.0-alpha",
+    "graphql": "^16.8.1"
+  }
+}
