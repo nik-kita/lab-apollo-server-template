@@ -1,0 +1,36 @@
+{
+  "imports": {
+    "@apollo/datasource-rest": "npm:@apollo/datasource-rest@^6.4.1",
+    "@apollo/server": "npm:@apollo/server@^4.11.3",
+    "@as-integrations/cloudflare-workers": "npm:@as-integrations/cloudflare-workers@^1.1.0",
+    "@graphql-codegen/cli": "npm:@graphql-codegen/cli@^5.0.5",
+    "@graphql-codegen/typescript": "npm:@graphql-codegen/typescript@^4.1.5",
+    "@graphql-codegen/typescript-resolvers": "npm:@graphql-codegen/typescript-resolvers@^4.4.4",
+    "graphql": "npm:graphql@^16.10.0"
+  },
+  "nodeModulesDir": "auto",
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-empty-interface",
+        "no-explicit-any"
+      ]
+    }
+  },
+  "compilerOptions": {
+    "lib": [
+      "esnext"
+    ],
+    "strict": true,
+    "types": [
+      "npm:@cloudflare/workers-types"
+    ]
+  },
+  "unstable": [
+    "kv"
+  ],
+  "tasks": {
+    "generate": "graphql-codegen",
+    "start": "deno serve -A src/index.ts"
+  }
+}

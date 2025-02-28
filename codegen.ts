@@ -1,5 +1,5 @@
 import type { CodegenConfig } from '@graphql-codegen/cli';
-import schema from './src/schema';
+import schema from './src/schema.ts';
 
 const config: CodegenConfig = {
   schema,

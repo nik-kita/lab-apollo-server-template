@@ -1,4 +1,4 @@
-import { Resolvers } from "./@types/apollo-server";
+import { Resolvers } from "./@types/apollo-server.d.ts";
 
 const resolvers: Resolvers<Context> = {
   Query: {

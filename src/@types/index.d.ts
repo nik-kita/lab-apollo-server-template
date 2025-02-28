@@ -1,4 +1,4 @@
-import type PokemonAPI from '../datasources/pokemon-api';
+import type PokemonAPI from '../datasources/pokemon-api.ts';
 
 export {};
 
